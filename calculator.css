@@ -12,6 +12,13 @@ h4 {
     color: grey;
 }
 
+p {
+    text-align: center;
+    padding-left: 70px;
+    padding-right: 70px;
+    font-style: italic;
+}
+
 #container {
     width: 100vh;
     text-align: center;
@@ -52,18 +59,22 @@ h4 {
 }
 
 #clear:hover {
-    color: pink;
-    background-color: powderblue;
+    color: #55CDFC;
+    background-color: #F7A8B8;
 }
 
 #backspace:hover {
-    color: pink;
-    background-color: powderblue;
+    color: #55CDFC;
+    background-color: #F7A8B8;
 }
 
 #percent:hover {
-    color: pink;
-    background-color: powderblue;
+    color: #55CDFC;
+    background-color: #F7A8B8;
+}
+
+.number:hover {
+    color: #F7A8B8;
 }
 
 .operator,
@@ -130,3 +141,22 @@ button:nth-child(20) {
     background-color: #55CDFC;
     color: white;
 }
+/******************Animated background styling***************/
+
+  body {
+      background: linear-gradient(-45deg, #55CDFC, #FFFFFF, #F7A8B8);
+      background-size: 400% 400%;
+      animation: gradient 15s ease infinite;
+  }
+  
+  @keyframes gradient {
+      0% {
+          background-position: 0% 50%;
+      }
+      50% {
+          background-position: 100% 50%;
+      }
+      100% {
+          background-position: 0% 50%;
+      }
+  }

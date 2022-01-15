@@ -1,4 +1,4 @@
-//////////////////Calculator functions
+//////////////////Calculator functions////////////////////////////
 function getHistory() {
     return document.getElementById('history-value').innerText;
 }
